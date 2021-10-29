@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+const { ClientBuilder } = require("../index")
+
+const
+    client = (new ClientBuilder()).build(),
+    { argv } = process
+
+if (argv[2] && argv[3]) {
+    client
+        .request(argv[2], argv[3])
+        .send()
+        .then(
+            console.log,
+            console.error
+        )
+}

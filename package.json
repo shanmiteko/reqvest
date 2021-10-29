@@ -1,0 +1,36 @@
+{
+  "name": "reqvest",
+  "version": "0.0.1",
+  "description": "http request client like rust reqwest",
+  "main": "index.js",
+  "bin": {
+    "reqvest": "./bin/reqvest"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanmiteko/reqvest.git"
+  },
+  "keywords": [
+    "http",
+    "request",
+    "proxy",
+    "spider"
+  ],
+  "author": "shanmite <shanmite@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shanmiteko/reqvest/issues"
+  },
+  "homepage": "https://github.com/shanmiteko/reqvest#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^8.0.1",
+    "mocha": "^9.1.3"
+  },
+  "dependencies": {
+    "debug": "^4.3.2"
+  }
+}
