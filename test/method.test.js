@@ -41,3 +41,29 @@ describe("http get", () => {
         })
     })
 })
+
+describe("http post", () => {
+    const client = client_builder.build()
+
+    describe("form data", () => {
+        it("should be able to send form data", async () => {
+            const data = await client
+                .post("https://httpbin.org/post")
+                .form({ "a": "1" })
+                .send()
+
+            expect(data.form).to.eql({ "a": "1" })
+        })
+    })
+
+    describe("json data", () => {
+        it("should be able to send json data", async () => {
+            const data = await client
+                .post("https://httpbin.org/post")
+                .json({ "a": "1" })
+                .send()
+
+            expect(data.json).to.eql({ "a": "1" })
+        })
+    })
+})

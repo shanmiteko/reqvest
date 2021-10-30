@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "noEmit": true,
+        "skipLibCheck": true,
+        "checkJs": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "module": "commonJS",
+        "rootDir": ".",
+        "resolveJsonModule": true
+    },
+    "exclude": [
+        "node_modules",
+        "test/**/*"
+    ]
+}

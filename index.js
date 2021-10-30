@@ -1,1 +1,1 @@
-module.exports = require("./lib/reqvest")
+module.exports = require("./lib/client")
